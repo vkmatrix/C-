@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+class looping
+{
+	private:
+	int n,i;
+	char s[10];
+	public:
+	void input()
+	{
+		cout<<"enter number of times 'n'  to print the string 's':";
+		cin>>n>>s;
+	}
+	void for_loop()
+	{
+		for(int i=1;i<=n;i++)   //syntax of for loop for(initialization;condition;increment/decrement)
+		{
+			cout<<s<<"\n";      //code to be performed
+		}
+	}
+	void while_loop()
+	{
+		i=1;           //syntax of while loop initialization
+		while(i<=n)         //condition
+		{
+			cout<<s<<"\n"; // code to be performed
+			i++;           //increment or decrement
+		}
+	}
+	void do_while_loop()
+	{
+		i=1;                     //initialization
+		do
+		{
+			cout<<s<<"\n";     //code to be performed
+	        i++;              // increment or decrement
+		}
+		while(i<=n);        //condition
+	}
+};
+
+int main()
+{
+	looping m1,m2,m3;
+	m1.input();
+	m1.do_while_loop();
+	m2.input();
+	m2.for_loop();
+	m3.input();
+	m3.while_loop();
+	return 0;
+}

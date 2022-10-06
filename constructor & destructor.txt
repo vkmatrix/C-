@@ -1,0 +1,13 @@
+CONSTRUCTOR RULES:
+1)the constructor function must be same as the class name.
+2)the constructor function should not have any return type.
+3)the constructor function must always be present in the public section of class.
+4)the constructor function takes no arguments unless it is a default constructor.
+5)the constructor function can only be called when an object is created.
+
+DESTRUCTOR RULES:
+1)the destructor must be same as class name but prefixed with tilde(~) symbol.
+2)the destructor function should not have any return type.
+3)the destructor must be defined only in the public section of the class.
+4)the destructor does not take any arguments.
+5)the destructor function can only be called outside of the scope in which the object is created and member functions are invoked.
